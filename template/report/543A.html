@@ -1,0 +1,171 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Karla:400,700' rel='stylesheet'>
+    <link rel="stylesheet" href="/static/css/report.css"/>
+</head>
+
+
+<body>
+
+<div class="container">
+    <div class="header clearfix">
+        <div class="col-md-8">
+            <h1 class="head1"><strong>543A</strong></h1>
+            <h3 class="head2"><strong>Monthly Analysis </strong></h3>
+        </div>
+        {% include 'dropdown.html' %}
+    </div>
+    <span class="lf-fixed vertical-text">uproute</span>
+    <span class="rt-fixed vertical-text">downroute</span>
+    <div class="_col col-md-12 on_time">
+        <h3>On-Time Performance</h3>
+        <div class="col-md-6 padding-lf-0" id="ontime_up">
+            The following shows percentage of buses which start on time as per the time table specified in DIMTS
+            website for <span class="text_highlight"> Anand Vihar </span>to<span class="text_highlight"> Kapasehra Border</span></h5>
+            <div class="col-md-12 graph"></div>
+        </div>
+
+        <div class="col-md-6 padding-lf-0" id="ontime_down">
+            The following shows percentage of buses which start on time as per the time table specified in DIMTS
+            website for <span class="text_highlight">Kapasehra Border </span>to<span
+                class="text_highlight"> Anand Vihar</span></h5>
+            <div class="col-md-12 graph"></div>
+        </div>
+    </div>
+    <div class="_col col-md-12">
+        <h3>Average Speed v/s Time</h3>
+        <div class="col-md-6" id="up_speed">
+            <h5>The following shows the monthly average speed for the bus for up route at different times. The bus
+                did not run at the times which are not there on the plot.</h5>
+            <div class="col-md-12 graph"></div>
+            <br>
+            <canvas id="myChart1" width="10" height="5"></canvas>
+        </div>
+        <div class="col-md-6" id="down_speed">
+            <h5>The following shows the monthly average speed for the bus for down route at different times. The bus
+                did
+                not run at the times which are not there on the plot.</h5>
+            <div class="col-md-12 graph"></div>
+            <br>
+            <canvas id="myChart2" width="10" height="5"></canvas>
+        </div>
+    </div>
+    <div class="_col col-md-12">
+        <h3>Average Speed</h3>
+        <div class="col-md-6" id="up_speed_month">
+            <h5>The following plot shows the monthly average speed for up route for the bus as compared to bus services
+                in
+                other places and other mode of transport</h5>
+            <div class="col-md-12 graph"></div>
+            <canvas id="myChart3" width="10" height="5"></canvas>
+        </div>
+        <div class="col-md-6" id="down_speed_month">
+
+            <h5>The following plot shows the monthly average speed for down route for the bus as compared to bus
+                services in
+                other places and other mode of transport</h5>
+            <div class="col-md-12 graph"></div>
+            <canvas id="myChart4" width="10" height="5"></canvas>
+        </div>
+    </div>
+    <div class="_col col-md-12">
+        <h3>Ridership | Monthly</h3>
+        <div class="col-md-6" id="up_monthly_rider">
+
+            <h5>The following plot shows the monthly number of riders for morning, noon, evening and night</h5>
+            <div class="col-md-12 graph"></div>
+            <br>
+            <canvas id="myChart5" width="10" height="5"></canvas>
+        </div>
+        <div class="col-md-6" id="down_monthly_rider">
+            <h5>The following plot shows the monthly number of riders for morning, noon, evening and night</h5>
+            <div class="col-md-12 graph"></div>
+            <br>
+            <canvas id="myChart6" width="10" height="5"></canvas>
+        </div>
+    </div>
+    <!-- <div class="col-md-6" id="down_monthly_rider">
+       <h3>Monthly ridership for down route </h3>
+       <h5>The following plot shows the monthly number of riders for morning, noon, evening and night for down route</h5>
+       <div class="col-md-12 graph"></div>
+       <br>
+       <canvas id="myChart6" width="10" height="5"></canvas>
+   </div> -->
+    <div class="_col col-md-12">
+        <h3>Fare Collection | Daily</h3>
+        <div class="col-md-6" id="up_rider_fare">
+
+            <h5>The following plot shows the fare collected for the month of October.</h5>
+            <div class="col-md-12 graph"></div>
+            <br>
+            <canvas id="myChart7" width="10" height="5"></canvas>
+        </div>
+        <div class="col-md-6" id="down_rider_fare">
+            <h5>The following plot shows the fare collected for the month of October.</h5>
+            <div class="col-md-12 graph"></div>
+            <br>
+            <canvas id="myChart8" width="10" height="5"></canvas>
+        </div>
+
+    </div>
+    <div class="_col col-md-12">
+        <h3>Ridership | Daily</h3>
+        <div class="col-md-6" id="up_riders">
+            <h5>The following plot shows the number of riders for up route for the month of October</h5>
+            <div class="col-md-12 graph"></div>
+            <br>
+            <canvas id="myChart9" width="10" height="5"></canvas>
+        </div>
+
+        <div class="col-md-6" id="down_riders">
+            <h5>The following plot shows the number of riders for down route for the month of October</h5>
+            <div class="col-md-12 graph"></div>
+            <br>
+            <canvas id="myChart10" width="10" height="5"></canvas>
+        </div>
+    </div>
+    <div class="_col col-md-12">
+        <h3>Peak Ridership | Daily</h3>
+        <div class="col-md-6" id="up_rider_peak">
+            <h5>The following plot shows the peak number of riders that were present on a bus at a particular day.</h5>
+            <div class="col-md-12 graph"></div>
+            <br>
+            <canvas id="myChart11" width="10" height="5"></canvas>
+        </div>
+
+        <div class="col-md-6" id="down_rider_peak">
+            <h5>The following plot shows the peak number of riders that were present on a bus at a particular day.</h5>
+            <div class="col-md-12 graph"></div>
+            <br>
+            <canvas id="myChart12" width="10" height="5"></canvas>
+        </div>
+    </div>
+     <div class="_col col-md-12">
+        <h3>Bunching | Monthly</h3>
+        <div class="col-md-12" id="up_monthly_bunching">
+            <h2 style = "font-size:30px;"><strong>Up Route</strong></h2>
+            <h5>The following plot shows the monthly buses bunch-size for morning, noon, evening and night</h5>
+            <div class="col-md-12 graph"></div>
+            <br>
+            <canvas id="myChart13" width="10" height="5"></canvas>
+        </div>
+        <div class="col-md-12" id="down_monthly_rider">
+            <h2 style = "font-size:30px;"><strong>Down Route</strong></h2>
+            <h5>The following plot shows the monthly buses bunch-size for morning, noon, evening and night</h5>
+            <div class="col-md-12 graph"></div>
+            <br>
+            <canvas id="myChart14" width="10" height="5"></canvas>
+        </div>
+    </div>
+        <script src="/static/js/Chart.min.js"></script>
+        <script src="/static/jquery.js"></script>
+        <script src="/static/js/jquery-3.2.1.slim.min.js"></script>
+        <script src="/static/js/popper.min.js"></script>
+        <script src="/static/js/bootstrap.min.js"></script>
+        <script src="/static/js/require.js"></script>
+        <script src="/static/js/report_543A.js"></script>
+</body>
+</html>
