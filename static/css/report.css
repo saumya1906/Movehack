@@ -1,0 +1,122 @@
+body * {
+    font-family: 'Karla', "Segoe UI", SansSerif, sans-serif;
+    font-size: 18px;
+}
+
+body {
+    background-color: #efefef;
+    font-weight: 400;
+}
+
+.head1 {
+    font-weight: 700;
+    font-size: 70px !important;
+}
+/*.check {
+
+margin: 0px;
+  padding-left: 20px;
+  background-image: url('/static/images/clock.png');
+    background-repeat: no-repeat;
+}*/
+.head2 {
+    font-weight: 700;
+    color: #bbb !important;
+}
+
+strong {
+    font-size: inherit;
+}
+
+.header {
+    background-color: #444242;
+    color: white;
+    padding: 5px;
+    text-align: left;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+._col {
+    margin-bottom: 24px;
+    margin-top: 24px;
+
+    padding: 48px;
+    background-color: #fff;
+}
+
+._col h3 {
+    color: #444242 !important;
+    font-size: 48px !important;
+    padding-left: 20px;
+}
+
+._col h5 {
+    color: #444242 !important;
+}
+
+._col > div {
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.padding-0 {
+    padding: 0;
+}
+
+.padding-lf-0 {
+    padding-left: 0;
+}
+
+canvas,
+.graph {
+    padding: 0;
+    margin: 12px 0;
+    padding-right: 24px;
+}
+
+.on {
+    filter: hue-rotate(0deg);
+    -webkit-filter: hue-rotate(0deg);
+    margin: 1px;
+}
+
+.off {
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+    opacity: 0.5;
+    margin: 1px;
+}
+
+.text_highlight {
+    color: #f38e4b;
+}
+
+.lf-fixed {
+    position: fixed;
+    padding: 12px;
+    left: 0;
+    top: 40%;
+}
+
+.rt-fixed {
+    position: fixed;
+    padding: 12px;
+    right: 0;
+    top: 40%;
+}
+
+.vertical-text {
+    width: 1px;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    padding: 32px;
+    color: #fff;
+    background-color: #77777736;
+}
+
+.dropdown {
+    position: absolute;
+    right: 0;
+    top: 100px;
+}

@@ -1,0 +1,156 @@
+    html, body, #container /*, and all other map parent selectors*/ {
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+}
+.modal {
+    display:    none;
+    position:   fixed;
+    z-index:    1000;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+    background: rgba( 255, 255, 255, .8 ) 
+                url('http://i.stack.imgur.com/FhHRx.gif') 
+                50% 50% 
+                no-repeat;
+}
+
+/* When the body has the loading class, we turn
+   the scrollbar off with overflow:hidden */
+body.loading .modal {
+    overflow: hidden;   
+}
+
+/* Anytime the body has the loading class, our
+   modal element will be visible */
+body.loading .modal {
+    display: block;
+}
+
+    .row {
+      padding: 12px;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background: white;
+    opacity: 1;
+    top: 0;
+      z-index: 999; 
+      /*width:200px;
+    height:100px;
+    background:red;
+    border-style: solid;*/
+    }
+    /*#bus_route{
+      margin-left: 0%;
+    }*/
+    
+    .fixed-bottom {
+      position: absolute;
+      /*top: 10px; */
+    opacity: 1;
+      z-index: 999;
+      /*bottom:0px;*/
+      /*width: 100%;*/
+      /*width:200px;
+    height:100px;
+    background:red;
+    border-style: solid;*/
+    /*height: 10%;*/
+    /*width: 0%;*/
+    }
+    #radio{
+      right: 2px;
+      width:30px;
+      
+    }
+    #weekly{
+      display:inline-block;
+      padding: 1px;
+    }
+    #daily{
+      padding: 1px;
+      display:inline-block;
+      
+    }
+    #mapid { 
+      height: 100%; 
+      width: auto;
+      position: relative;
+      /*bottom: 0px;
+      top: 0px;
+      left: 0px;*/
+      /*margin-bottom: 5px;*/
+      /*border: solid;*/
+    }
+    /*#val{
+      margin-right: 0px;
+    }*/
+    #uproute{
+      margin-right: 15px;
+      margin-left: 20px;
+     
+    }
+
+.leaflet-div-icon {
+background: transparent;
+border: none;
+}
+.leaflet-marker-icon .number{
+position: relative;
+top: -37px;
+font-size: 12px;
+width: 25px;
+text-align: center;
+}
+
+
+      #key{
+      left:2px;
+      font-size: 16px;
+       background: white;
+      opacity: 0.6; 
+      width:38%;
+      padding: 12px;
+      /*position: rel;*/
+      /*margin-bottom: 0px;*/
+    }
+    #report{
+      /*float: right;*/
+     padding: 12px;
+      font-size: 16px;
+     left: 900px;
+     position: fixed;
+    bottom: 20px;
+     background: white;
+      opacity: 0.6; 
+      width: 40%;
+      height: 89%;
+    }
+    /*#busroute{
+     position: fixed;
+      left:0%;
+    }
+    #date{
+      position: fixed;
+      width: 30%;
+      top: 30px;
+      left: 27%;
+    }
+    #routes{
+      position: fixed;
+      left: 2.5%;
+      top: 80px;
+      width: 15%;
+    }*/
+  
+   /* #note{
+      position: absolute;
+      width: 20%;
+      top:550px;
+      left:2.5%;
+      right: 1050px;
+    }
+*/
