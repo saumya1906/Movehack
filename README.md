@@ -9,3 +9,9 @@ We have created a graph where the nodes are the bus stops and metro stations com
 Please find the assets from https://drive.google.com/open?id=1D2E6cdw-G4BF1MQETFUCzj-rUGAWhdqf.
 Download the assets folder in the root and run the command: '$ python app.py' in the terminal. Wait for the preprocessing for around 30 seconds and then run localhost:5000 in the browser.
 For checking, please enter the card number: 4242 4242 4242 4242.
+
+Following are the team members:
+Utsav Rohilla
+Saumya Balodi
+Avdesh Kumar
+Anubhav Jain
